@@ -12,3 +12,5 @@ elif variant == 3:
 elif variant == 4:
     result = float(input('Сколько метров? :\n'))
     print(result, 'метров составляют', round((result / 1.829), 2), 'саженей')
+else:
+    print('Unknown')
