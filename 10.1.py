@@ -1,5 +1,6 @@
 length_in_meters = float(input('Введите значение в метрах: '))
 def converter(length_in_meters, convert_type):
+    result = 0
     if convert_type == 'sm':
         result = f'{(length_in_meters * 100)} сантиметров'
     elif convert_type == 'ft':
@@ -8,6 +9,8 @@ def converter(length_in_meters, convert_type):
         result = f'{(length_in_meters * 39.37)} дюймов'
     elif convert_type == 'sj':
         result = f'{(length_in_meters / 1.829)} саженей'
+    else:
+        result = 'Unknown'
     return result
 
 print(converter(length_in_meters, 'sm'))
